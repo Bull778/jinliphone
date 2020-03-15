@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0; }
+
+h1, h3, h2, h4, h5, h6, b, strong {
+  font-weight: normal;
+  /* 取消默认加粗样式 */
+  font-size: 12px; }
+
+body {
+  font: 12px/1.5 Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-serif;
+  background: #fff;
+  color: #000;
+  font-family: "Microsoft YaHei"; }
+
+i, em {
+  font-style: normal;
+  /* 取消默认倾斜 */ }
+
+li {
+  list-style: none;
+  /* 取消样式 */ }
+
+a {
+  text-decoration: none;
+  /* 清除下划线 */ }
+
+input {
+  outline: none;
+  /* 取消选中后的焦点蓝框 */ }
+
+img {
+  vertical-align: top;
+  /* 顶端对齐 */ }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after {
+  content: ' ';
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+  display: block; }
+
+img, a {
+  border: 0; }

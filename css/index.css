@@ -1,0 +1,814 @@
+@charset "UTF-8";
+.contalner {
+  width: 1196px;
+  margin: 0 auto;
+  text-align: right; }
+
+/* 顶部导航栏 */
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff; }
+
+#header .logo {
+  background: url(https://shop.gionee.com/static/web201310/spirite.png); }
+
+.nav {
+  width: 100%;
+  height: 103px;
+  border-bottom: #d5d5d5 1px solid;
+  box-shadow: 0 1px 1px #ccc;
+  position: relative;
+  z-index: 90;
+  transform: translateZ(0); }
+
+.navbox {
+  width: 1190px;
+  margin: 0 auto; }
+
+.navbox > a {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 51px;
+  overflow: hidden;
+  margin-top: 25px; }
+
+.navright {
+  float: right;
+  width: 850px; }
+
+.navtopbox {
+  display: flex; }
+
+.navtop {
+  width: 89%;
+  text-align: right;
+  color: #9f9f9f;
+  padding-top: 10px;
+  line-height: 20px;
+  margin-bottom: 23px;
+  position: relative;
+  float: left;
+  z-index: 101; }
+
+.navtop > a {
+  color: #9f9f9f; }
+
+.buycolor:hover {
+  border: 1px solid #e9e9e9;
+  border-bottom: 1px solid #fff; }
+
+.navtop a:hover {
+  color: #ef4222; }
+
+#buybtn:hover i {
+  background-position: -262px -4px; }
+
+.navtop > span {
+  margin: 6px;
+  color: #9f9f9f; }
+
+.buycolor {
+  width: 10%;
+  line-height: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  padding-top: 10px;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #fff; }
+
+.buycolor .xian {
+  width: 100%;
+  background-color: #fff;
+  height: 5px;
+  position: absolute;
+  top: 30px;
+  z-index: 9999; }
+
+.buybox {
+  display: none;
+  position: absolute;
+  right: -1px;
+  top: 11px;
+  border: solid 1px #e9e9e9;
+  width: 314px;
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 10px;
+  z-index: 99; }
+
+.buytxt {
+  font-size: 14px;
+  padding: 18px 15px 10px 15px; }
+
+#buybtn {
+  display: block;
+  float: right;
+  color: #9f9f9f;
+  border: 1px solid #fff; }
+
+#buybtn:hover {
+  color: #ef4222; }
+
+.buycolor:hover .buybox {
+  display: block;
+  top: 31px; }
+
+#buybtn i {
+  background: url(https://shop.gionee.com/static/web201310/spirite.png); }
+
+#buybtn i {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  right: 52px;
+  top: 12px;
+  background-position: -216px -4px; }
+
+.navleft {
+  width: 680px;
+  position: relative;
+  z-index: 1;
+  padding-left: 40px; }
+
+.navleft > a {
+  display: block;
+  font-size: 15px;
+  color: #000;
+  line-height: 30px;
+  width: auto;
+  margin: 0 27px;
+  float: left; }
+
+.navleft a:hover {
+  color: #EF4222; }
+
+.seainput {
+  float: right;
+  width: 165px;
+  padding-left: 3px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+  z-index: 1; }
+
+.seainput .txt {
+  width: 158px;
+  height: 28px;
+  line-height: 28px;
+  border: 0;
+  font-family: "Microsoft YaHei";
+  border: 1px solid #9f9f9f; }
+
+.seainput .smtbtn {
+  background: url(https://shop.gionee.com/static/web201310/spirite.png); }
+
+.seainput .smtbtn {
+  width: 25px;
+  height: 28px;
+  display: block;
+  background-position: -236px 2px;
+  border: 0;
+  text-indent: -9999em;
+  cursor: pointer;
+  outline: 0;
+  position: absolute;
+  right: 10px;
+  top: 0; }
+
+/* 右边固定导航 */
+#rightnav {
+  position: fixed;
+  right: 20px;
+  width: 50px;
+  top: 50%;
+  margin-top: -144px;
+  z-index: 9999; }
+
+#rightnav a i {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  top: 10px;
+  left: 14px;
+  background: url(https://shop.gionee.com/static/web201310/ui_service.png?d=1127) no-repeat 0 0;
+  cursor: pointer; }
+
+#rightnav a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 58px;
+  height: 28px;
+  padding-top: 40px;
+  overflow: hidden;
+  background: #fff;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border: solid 1px #ddd;
+  background: #fff;
+  color: #000; }
+
+#rightnav .serve i {
+  background-position: 0 0; }
+
+#rightnav .serve:hover {
+  color: #EF4222; }
+
+#rightnav .serve:hover i {
+  background-position: 0 -30px; }
+
+#rightnav .help i {
+  background-position: -30px 0; }
+
+#rightnav .help:hover {
+  color: #EF4222; }
+
+#rightnav .help:hover i {
+  background-position: -30px -30px; }
+
+#rightnav .returntop i {
+  background-position: -60px 0; }
+
+#rightnav .returntop:hover {
+  color: #EF4222; }
+
+#rightnav .returntop:hover i {
+  background-position: -60px -30px; }
+
+#rightnav .jinli:hover {
+  color: #EF4222; }
+
+#rightnav .jinli {
+  height: 35px;
+  cursor: auto; }
+
+#rightnav .jinli span {
+  position: relative;
+  top: 10px; }
+
+#rightnav .jinli img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-top: -61px;
+  border: 0; }
+
+/* 轮播图 */
+#banner {
+  min-width: 1196px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 103px; }
+
+.bannerimg {
+  width: 100%;
+  height: 640px; }
+
+.bannerimg li > a {
+  height: 640px;
+  display: block;
+  width: 100%; }
+
+.bannerbtn {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  width: 100%;
+  display: table; }
+
+.bannerbtn > ul {
+  width: 1196px;
+  margin: 0 auto;
+  text-align: center; }
+
+.bannerbtn li {
+  width: 50px;
+  height: 4px;
+  overflow: hidden;
+  margin-right: 14px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000;
+  display: inline-block; }
+
+.arrow {
+  width: 100%;
+  position: absolute;
+  z-index: 666;
+  top: 43%;
+  height: 0; }
+
+.arrows {
+  width: 1230px;
+  margin: 0 auto;
+  height: 0;
+  display: block; }
+
+.arrowleft {
+  cursor: pointer;
+  border: 0; }
+
+.arrowright {
+  cursor: pointer;
+  float: right;
+  border: 0; }
+
+.bannerbtn ul > li.active {
+  background-color: #FF6A00; }
+
+#starproduct {
+  width: 100%;
+  background-color: #fff; }
+
+.commom {
+  width: 1196px;
+  margin: 0 auto;
+  text-align: center; }
+
+.common-title {
+  padding: 40px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #000; }
+
+.sp-list {
+  padding-bottom: 60px; }
+
+.sp-list > li {
+  float: left;
+  margin-right: 8px; }
+
+#starproduct .sp-list a {
+  display: block;
+  margin-bottom: -4px;
+  width: 390px;
+  height: 270px;
+  position: relative; }
+
+#starproduct .sp-list .hr-des {
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  text-align: left;
+  color: #fff; }
+
+#starproduct .sp-list .hr-title {
+  padding-left: 270px;
+  font-size: 26px;
+  padding-bottom: 10px; }
+
+#starproduct .sp-list .hr-detail {
+  font-size: 16px;
+  padding-left: 215px;
+  height: 23px;
+  color: #fdf7f9; }
+
+#starproduct .sp-list .hr-circle {
+  font-size: 18px;
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: super; }
+
+#hotsale {
+  width: 100%;
+  background-color: #e5e5e5;
+  position: relative;
+  height: 1306px; }
+
+.hotbox {
+  width: 1196px;
+  margin: 0 auto;
+  text-align: right; }
+
+.hottitle {
+  padding: 40px 0 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center; }
+
+.more {
+  text-align: right;
+  font-size: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  text-decoration: none;
+  outline: 0;
+  color: #000; }
+
+.more:hover {
+  color: #EF4222; }
+
+.product {
+  position: relative; }
+
+.proleft {
+  float: left;
+  width: 26%;
+  height: 785px; }
+
+.proleft > a {
+  -webkit-transition: all ease-in .3s;
+  -moz-transition: all ease-in .3s;
+  -ms-transition: all ease-in .3s;
+  -o-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+  z-index: 9999; }
+
+.proleft:hover .dot {
+  bottom: 420px; }
+
+.proleft:hover a {
+  box-shadow: 0px 0px 10px 2px #999999;
+  transform: translateY(-2px); }
+
+.dot {
+  position: absolute;
+  bottom: 10px;
+  z-index: 999;
+  width: 305px;
+  text-align: center;
+  margin: 0 auto; }
+
+.dot > li {
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-right: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ef4222;
+  display: inline-block; }
+
+.dot:hover {
+  bottom: 420px; }
+
+.dot:hover .proleft > a {
+  box-shadow: 0px 0px 10px 2px #999999;
+  transform: translateY(-2px); }
+
+.proleft > a {
+  display: block;
+  z-index: 99;
+  margin-right: 5px;
+  margin-bottom: -4px;
+  position: relative;
+  float: left;
+  height: 785px;
+  width: 305px;
+  color: #000; }
+
+.proright {
+  float: left;
+  width: 74%; }
+
+.proright > li {
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  width: 290px;
+  height: 390px;
+  background-color: #fff;
+  display: list-item; }
+
+.proright a {
+  display: block;
+  margin-bottom: -4px;
+  position: relative; }
+
+.hr-phoneimg {
+  width: 120px;
+  height: 240px;
+  position: relative;
+  margin: 0 auto; }
+
+.proright .after {
+  position: absolute;
+  top: 23px;
+  left: 3px; }
+
+.proright .before {
+  position: absolute;
+  top: 23px;
+  left: 3px; }
+
+.hr-phoneimg > img {
+  width: 120px;
+  height: 240px;
+  transition: transform .8s .1s; }
+
+.hr-des {
+  position: absolute;
+  top: 278px;
+  width: 100%;
+  text-align: center; }
+
+.hr-title {
+  color: #0f0e0e;
+  font-size: 16px; }
+
+.hr-detail {
+  color: #9E9E9E;
+  font-size: 14px;
+  padding-top: 3px; }
+
+.hr-price {
+  color: #fe6a00;
+  font-size: 24px;
+  padding-top: 12px; }
+
+.hr-money {
+  font-size: 18px;
+  padding-right: 2px; }
+
+.proright li:hover .after {
+  -ms-transform: translate(-30px, 0);
+  transform: translate(-30px, 0); }
+
+.proright li:hover .before {
+  -ms-transform: translate(30px, 0);
+  transform: translate(30px, 0); }
+
+#access {
+  width: 100%;
+  background-color: #e5e5e5; }
+
+.commom-more {
+  width: 1196px;
+  margin: 0 auto;
+  text-align: right; }
+
+.acctitle {
+  padding: 40px 0 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center; }
+
+.eas {
+  padding-bottom: 60px; }
+
+.eas li {
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 16px;
+  width: 386px;
+  height: 343px; }
+
+a {
+  text-decoration: none;
+  outline: 0;
+  color: #000; }
+
+.eas a {
+  display: block;
+  margin-bottom: -4px;
+  position: relative;
+  transition: all ease-in .3s; }
+
+.eas a:hover {
+  box-shadow: 0px 0px 10px 2px #999999;
+  transform: translateY(-2px); }
+
+.eas .hr-des {
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  text-align: center; }
+
+.eas .hr-des {
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  text-align: center; }
+
+.eas .hr-detail {
+  color: #9E9E9E;
+  font-size: 14px;
+  padding-top: 3px; }
+
+.eas .hr-price {
+  color: #f06261;
+  font-size: 24px;
+  padding-top: 2px; }
+
+.eas .hr-money {
+  font-size: 18px;
+  padding-right: 2px; }
+
+#brand {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20px; }
+
+.bdtitle {
+  padding: 40px 0;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000; }
+
+.bdimgbox img {
+  margin-right: 10px;
+  margin-bottom: 12px;
+  width: 386px;
+  height: 377px;
+  cursor: pointer; }
+
+#bottomserve {
+  padding-top: 40px; }
+
+.ser1 {
+  border-bottom: #eaeaea 1px solid;
+  width: 100%;
+  padding-bottom: 40px;
+  height: 47px;
+  background: #fff; }
+
+.ser1 > ul {
+  width: 1190px;
+  margin: 0 auto; }
+
+.wrapper li {
+  float: left;
+  width: 24.5%;
+  height: 47px; }
+
+.wrapper li a {
+  width: 140px;
+  height: 47px;
+  display: block;
+  float: left;
+  line-height: 20px;
+  font-size: 16px;
+  color: #777; }
+
+.wrapper li i {
+  display: block;
+  float: left;
+  line-height: 20px;
+  font-size: 16px;
+  color: #777;
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+  background: url(https://shop.gionee.com/static/web201310/spirite.png); }
+
+.wrapper i.c_dropgos {
+  background-position: 0 -60px; }
+
+.wrapper i.c_change {
+  background-position: -46px -60px; }
+
+.wrapper i.c_freesheep {
+  background-position: -92px -60px; }
+
+.wrapper i.c_svspoint {
+  background-position: -138px -60px; }
+
+.wrapper li em {
+  font-style: normal;
+  float: left; }
+
+.ser2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1190px;
+  margin: 0 auto;
+  display: block; }
+
+.ser2 dl {
+  float: left;
+  width: 18%;
+  line-height: 33px;
+  color: #777; }
+
+.ser2 dt {
+  font-size: 16px; }
+
+.ser2 dd {
+  font-size: 12px; }
+
+.wx {
+  width: 105px;
+  float: right;
+  text-align: center;
+  line-height: 30px;
+  color: #999; }
+
+.weixinimg {
+  display: block;
+  border: #ccc 3px solid;
+  width: 98px;
+  height: 98px;
+  background: url(https://shop.gionee.com/static/web201310/spirite.png); }
+
+.wx i {
+  background-position: -279px 0; }
+
+.ser3 {
+  background: #333;
+  text-align: left;
+  color: #999;
+  padding: 20px 0;
+  float: left;
+  width: 100%;
+  height: 115px; }
+
+.ser3box {
+  width: 1190px;
+  margin: 0 auto;
+  display: block;
+  position: relative; }
+
+.ser3 a {
+  color: #999; }
+
+.ser3 a:hover {
+  color: #fff; }
+
+.ser3 li:hover {
+  color: #fff; }
+
+.map {
+  float: left; }
+
+.map > span {
+  margin: 6px; }
+
+.group {
+  float: left;
+  position: relative; }
+
+.group > i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: 9px;
+  right: -14px;
+  border-top: solid 4px #999;
+  border-left: solid 4px #474747;
+  border-right: solid 4px #474747; }
+
+.group :hover i {
+  transform: rotate(180deg);
+  border-color: #474747;
+  border-top-color: #fff; }
+
+.group .sp1 {
+  display: none; }
+
+.group :hover .sp1 {
+  display: block; }
+
+.p1 {
+  line-height: 45px; }
+
+.copyright {
+  margin-bottom: 8px;
+  float: left; }
+
+.txt {
+  float: right;
+  margin-top: -5px;
+  position: relative;
+  width: 100px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px; }
+
+.txte {
+  display: none;
+  position: absolute;
+  top: -20px; }
+
+.txt:hover .txte {
+  display: block; }
+
+.txt li {
+  background: #474747;
+  padding: 2px;
+  width: 100px; }
+
+.lisp1 {
+  display: none;
+  float: right;
+  padding-right: 5px; }
+
+.txt:hover .lisp1 {
+  display: block; }
+
+.txt:hover .lisp {
+  display: none; }
