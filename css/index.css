@@ -75,12 +75,14 @@
   width: 10%;
   line-height: 20px;
   height: 20px;
+  right: -10px;
   float: right;
   position: relative;
   padding-top: 10px;
   z-index: 999;
   background-color: #fff;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+  text-align: center; }
 
 .buycolor .xian {
   width: 100%;
@@ -109,6 +111,7 @@
 #buybtn {
   display: block;
   float: right;
+  margin-right: 10px;
   color: #9f9f9f;
   border: 1px solid #fff; }
 
@@ -128,7 +131,7 @@
   width: 16px;
   height: 16px;
   overflow: hidden;
-  right: 52px;
+  right: 62px;
   top: 12px;
   background-position: -216px -4px; }
 
@@ -163,6 +166,7 @@
   width: 158px;
   height: 28px;
   line-height: 28px;
+  text-align: left;
   border: 0;
   font-family: "Microsoft YaHei";
   border: 1px solid #9f9f9f; }
@@ -180,8 +184,8 @@
   cursor: pointer;
   outline: 0;
   position: absolute;
-  right: 10px;
-  top: 0; }
+  right: 2px;
+  top: -5px; }
 
 /* 右边固定导航 */
 #rightnav {
@@ -751,30 +755,49 @@ a {
   float: left;
   position: relative; }
 
-.group > i {
+.group .triangle {
   position: absolute;
   width: 0;
   height: 0;
   overflow: hidden;
   top: 9px;
-  right: -14px;
+  left: 80px;
   border-top: solid 4px #999;
   border-left: solid 4px #474747;
-  border-right: solid 4px #474747; }
+  border-right: solid 4px #474747;
+  transform: rotate(0deg);
+  transition: all 1s linear; }
 
-.group :hover i {
+.group:hover .triangle {
   transform: rotate(180deg);
+  transform-origin: 50% 50%;
   border-color: #474747;
   border-top-color: #fff; }
 
 .group .sp1 {
-  display: none; }
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 888;
+  transform: translateY(0px); }
 
-.group :hover .sp1 {
-  display: block; }
+.group:hover .sp1 {
+  display: block;
+  background-color: #474747;
+  transform: translateY(18px);
+  width: 96px; }
+
+.group:hover .sp {
+  display: block;
+  background-color: #474747;
+  width: 96px; }
 
 .p1 {
-  line-height: 45px; }
+  line-height: 20px; }
+
+.p1 > a > img {
+  margin-top: -10px; }
 
 .copyright {
   margin-bottom: 8px;
@@ -782,7 +805,7 @@ a {
 
 .txt {
   float: right;
-  margin-top: -5px;
+  margin-top: -10px;
   position: relative;
   width: 100px;
   height: 24px;
