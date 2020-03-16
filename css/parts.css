@@ -1,13 +1,11 @@
 @charset "UTF-8";
-.contalner {
-  width: 1196px;
-  margin: 0 auto;
-  text-align: right; }
+a {
+  text-decoration: none;
+  outline: 0;
+  color: #000; }
 
 /* 顶部导航栏 */
 #header {
-  position: fixed;
-  top: 0;
   z-index: 999;
   width: 100%;
   background-color: #fff; }
@@ -267,368 +265,223 @@
   margin-top: -61px;
   border: 0; }
 
-/* 轮播图 */
-#banner {
-  min-width: 1196px;
-  overflow: hidden;
+#wrapperbox {
+  min-height: 500px;
+  padding-bottom: 20px;
+  margin-top: 52px;
+  background-color: #F1F1F1; }
+
+.wrap {
+  width: 1190px;
+  margin: 0 auto;
+  min-width: 960px; }
+
+.select {
+  background: #fff;
+  margin-top: 20px; }
+
+.checkbox {
+  padding: 13px 0;
+  margin: 0 20px;
+  height: 28px;
+  line-height: 28px;
+  border-bottom: #e9e9e9 1px solid;
+  clear: both;
+  font-size: 14px; }
+
+.checkbox > span {
+  width: 78px;
+  float: left; }
+
+.checkbox li {
+  float: left; }
+
+.checkbox li > a {
+  margin-right: 20px;
+  line-height: 28px;
   position: relative;
-  margin: 0 auto;
-  margin-top: 103px; }
+  padding-left: 18px;
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+  font-size: 14px; }
 
-.bannerimg {
-  width: 100%;
-  height: 640px; }
-
-.bannerimg li > a {
-  height: 640px;
+.checkbox a i.ckbx {
   display: block;
-  width: 100%; }
-
-.bannerbtn {
+  width: 14px;
+  height: 14px;
+  background: url(https://shop.gionee.com/static/images/global/newpartlst.png) no-repeat 0 -148px;
   position: absolute;
-  bottom: 10px;
-  z-index: 1;
-  width: 100%;
-  display: table; }
+  top: 7px;
+  left: 0;
+  overflow: hidden; }
 
-.bannerbtn > ul {
-  width: 1196px;
-  margin: 0 auto;
+.checkbox a i.active {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(https://shop.gionee.com/static/images/global/newpartlst.png) no-repeat 0 -148px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  overflow: hidden;
+  background-position: 0 -134px;
+  z-index: 999; }
+
+.checkbox li a:hover {
+  color: #F14260; }
+
+.checkbox i.ckbx1 {
+  width: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-right: 3px;
+  display: inline-block;
+  background: url(https://shop.gionee.com/static/images/global/newpartlst.png) no-repeat -10px -12px;
+  position: absolute;
+  left: 3px;
+  top: 7px; }
+
+.productlist {
+  padding: 0;
+  background: #fff;
+  border-top: 3px solid #ddd;
+  margin-top: -1px; }
+
+.probox {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 12px; }
+
+.pro_list {
+  background: #fff;
+  width: 108%;
+  position: relative;
+  zoom: 1; }
+
+.list_pro {
+  width: 297px;
+  height: 440px;
+  border: none;
+  border-right: solid #eee 1px;
+  overflow: hidden;
+  padding: 40px 0 0px;
+  background: #fff;
+  border-bottom: solid #eee 1px;
+  padding-bottom: 0;
+  position: relative; }
+
+.pro_list li {
+  float: left;
   text-align: center; }
 
-.bannerbtn li {
-  width: 50px;
-  height: 4px;
+.list_pro a.img {
+  position: relative;
   overflow: hidden;
-  margin-right: 14px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #000;
-  display: inline-block; }
+  width: 230px;
+  height: 300px;
+  margin: 0 auto 30px; }
 
-.arrow {
-  width: 100%;
-  position: absolute;
-  z-index: 666;
-  top: 43%;
-  height: 0; }
+.list_pro a.img img {
+  width: 300px;
+  height: 300px;
+  margin-left: -35px;
+  margin-bottom: 10px; }
 
-.arrows {
-  width: 1230px;
+.list_pro .goods_title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
   margin: 0 auto;
-  height: 0;
+  display: inline-block;
+  padding-right: 7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal; }
+
+.list_pro .promot_st {
+  width: 200px;
+  margin: 0 auto 3px;
+  color: #999999;
+  font-weight: normal;
+  font-size: 12px;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
   display: block; }
 
-.arrowleft {
-  cursor: pointer;
-  border: 0; }
-
-.arrowright {
-  cursor: pointer;
-  float: right;
-  border: 0; }
-
-.bannerbtn ul > li.active {
-  background-color: #FF6A00; }
-
-#starproduct {
-  width: 100%;
-  background-color: #fff; }
-
-.commom {
-  width: 1196px;
-  margin: 0 auto;
-  text-align: center; }
-
-.common-title {
-  padding: 40px 0;
-  font-size: 30px;
-  letter-spacing: 1px;
-  color: #000; }
-
-.sp-list {
-  padding-bottom: 60px; }
-
-.sp-list > li {
-  float: left;
-  margin-right: 8px; }
-
-#starproduct .sp-list a {
-  display: block;
-  margin-bottom: -4px;
-  width: 390px;
-  height: 270px;
-  position: relative; }
-
-#starproduct .sp-list .hr-des {
-  position: absolute;
-  top: 41px;
-  width: 100%;
-  text-align: left;
-  color: #fff; }
-
-#starproduct .sp-list .hr-title {
-  padding-left: 270px;
-  font-size: 26px;
-  padding-bottom: 10px; }
-
-#starproduct .sp-list .hr-detail {
-  font-size: 16px;
-  padding-left: 215px;
-  height: 23px;
-  color: #fdf7f9; }
-
-#starproduct .sp-list .hr-circle {
-  font-size: 18px;
-  padding-right: 10px;
-  display: inline-block;
-  vertical-align: super; }
-
-#hotsale {
-  width: 100%;
-  background-color: #e5e5e5;
-  position: relative;
-  height: 1306px; }
-
-.hotbox {
-  width: 1196px;
-  margin: 0 auto;
-  text-align: right; }
-
-.hottitle {
-  padding: 40px 0 0;
-  font-size: 30px;
-  letter-spacing: 1px;
-  color: #000;
-  text-align: center; }
-
-.more {
-  text-align: right;
-  font-size: 15px;
-  padding-bottom: 15px;
-  display: inline-block;
-  text-decoration: none;
-  outline: 0;
-  color: #000; }
-
-.more:hover {
-  color: #EF4222; }
-
-.product {
-  position: relative; }
-
-.proleft {
-  float: left;
-  width: 26%;
-  height: 785px; }
-
-.proleft > a {
-  -webkit-transition: all ease-in .3s;
-  -moz-transition: all ease-in .3s;
-  -ms-transition: all ease-in .3s;
-  -o-transition: all ease-in .3s;
-  transition: all ease-in .3s;
-  z-index: 9999; }
-
-.proleft:hover .dot {
-  bottom: 420px; }
-
-.proleft:hover a {
-  box-shadow: 0px 0px 10px 2px #999999;
-  transform: translateY(-2px); }
-
-.dot {
-  position: absolute;
-  bottom: 10px;
-  z-index: 999;
-  width: 305px;
-  text-align: center;
-  margin: 0 auto; }
-
-.dot > li {
-  width: 10px;
-  height: 10px;
+.list_pro .ui_pprice {
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  font-weight: normal;
   overflow: hidden;
-  margin-right: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #ef4222;
-  display: inline-block; }
+  font-family: Arial,Helvetica,sans-serif;
+  color: #ef4222;
+  font-size: 18px; }
 
-.dot:hover {
-  bottom: 420px; }
-
-.dot:hover .proleft > a {
-  box-shadow: 0px 0px 10px 2px #999999;
-  transform: translateY(-2px); }
-
-.proleft > a {
-  display: block;
-  z-index: 99;
-  margin-right: 5px;
-  margin-bottom: -4px;
-  position: relative;
-  float: left;
-  height: 785px;
-  width: 305px;
-  color: #000; }
-
-.proright {
-  float: left;
-  width: 74%; }
-
-.proright > li {
-  float: left;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  width: 290px;
-  height: 390px;
-  background-color: #fff;
-  display: list-item; }
-
-.proright a {
-  display: block;
-  margin-bottom: -4px;
-  position: relative; }
-
-.hr-phoneimg {
-  width: 120px;
-  height: 240px;
-  position: relative;
-  margin: 0 auto; }
-
-.proright .after {
-  position: absolute;
-  top: 23px;
-  left: 3px; }
-
-.proright .before {
-  position: absolute;
-  top: 23px;
-  left: 3px; }
-
-.hr-phoneimg > img {
-  width: 120px;
-  height: 240px;
-  transition: transform .8s .1s; }
-
-.hr-des {
-  position: absolute;
-  top: 278px;
-  width: 100%;
-  text-align: center; }
-
-.hr-title {
-  color: #0f0e0e;
-  font-size: 16px; }
-
-.hr-detail {
-  color: #9E9E9E;
+a.probuy {
+  display: none;
+  width: 95px;
+  height: 36px;
+  padding-left: 25px;
+  background: #ef4222;
   font-size: 14px;
-  padding-top: 3px; }
+  line-height: 36px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  left: 89px;
+  bottom: -1px; }
 
-.hr-price {
-  color: #fe6a00;
-  font-size: 24px;
-  padding-top: 12px; }
+i.i_con_arort {
+  display: block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  background: url(https://shop.gionee.com/static/web201310/spirite.png);
+  background-position: -345px -444px;
+  position: absolute;
+  right: 22px;
+  top: 12px; }
 
-.hr-money {
-  font-size: 18px;
-  padding-right: 2px; }
-
-.proright li:hover .after {
-  -ms-transform: translate(-30px, 0);
-  transform: translate(-30px, 0); }
-
-.proright li:hover .before {
-  -ms-transform: translate(30px, 0);
-  transform: translate(30px, 0); }
-
-#access {
-  width: 100%;
-  background-color: #e5e5e5; }
-
-.commom-more {
-  width: 1196px;
+a.probuy1 {
+  display: none;
+  width: 86px;
+  height: 24px;
   margin: 0 auto;
-  text-align: right; }
-
-.acctitle {
-  padding: 40px 0 0;
-  font-size: 30px;
-  letter-spacing: 1px;
-  color: #000;
-  text-align: center; }
-
-.eas {
-  padding-bottom: 60px; }
-
-.eas li {
-  float: left;
-  margin-right: 12px;
-  margin-bottom: 16px;
-  width: 386px;
-  height: 343px; }
-
-a {
-  text-decoration: none;
-  outline: 0;
-  color: #000; }
-
-.eas a {
-  display: block;
-  margin-bottom: -4px;
   position: relative;
-  transition: all ease-in .3s; }
-
-.eas a:hover {
-  box-shadow: 0px 0px 10px 2px #999999;
-  transform: translateY(-2px); }
-
-.eas .hr-des {
-  position: absolute;
-  top: 240px;
-  width: 100%;
-  text-align: center; }
-
-.eas .hr-des {
-  position: absolute;
-  top: 240px;
-  width: 100%;
-  text-align: center; }
-
-.eas .hr-detail {
-  color: #9E9E9E;
   font-size: 14px;
-  padding-top: 3px; }
+  line-height: 24px;
+  color: #ef4222;
+  text-align: center; }
 
-.eas .hr-price {
-  color: #f06261;
-  font-size: 24px;
-  padding-top: 2px; }
+i.i_con_arwt {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url(https://shop.gionee.com/static/web201310/spirite.png);
+  background-position: -348px -426px;
+  position: absolute;
+  right: 0px;
+  top: 5px; }
 
-.eas .hr-money {
-  font-size: 18px;
-  padding-right: 2px; }
+.list_pro:hover a.probuy {
+  display: block; }
 
-#brand {
-  width: 100%;
-  background-color: #fff;
-  padding-bottom: 20px; }
+.list_pro:hover a.probuy1 {
+  display: block; }
 
-.bdtitle {
-  padding: 40px 0;
-  font-size: 30px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #000; }
+.goods_title:hover {
+  color: #ef4222; }
 
-.bdimgbox img {
-  margin-right: 10px;
-  margin-bottom: 12px;
-  width: 386px;
-  height: 377px;
-  cursor: pointer; }
+.ui_price_m {
+  color: #ccc;
+  text-decoration: line-through;
+  margin-left: 5px; }
 
 #bottomserve {
   padding-top: 40px; }
