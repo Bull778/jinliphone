@@ -9,3 +9,6 @@ index.html
 
 parts.html
 商品列表页
+
+particulars.html
+商品详情页
