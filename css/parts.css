@@ -183,7 +183,7 @@ a {
   outline: 0;
   position: absolute;
   right: 2px;
-  top: -5px; }
+  top: -10px; }
 
 /* 右边固定导航 */
 #rightnav {
@@ -294,7 +294,8 @@ a {
   float: left; }
 
 .checkbox li {
-  float: left; }
+  float: left;
+  text-align: center; }
 
 .checkbox li > a {
   margin-right: 20px;
@@ -320,12 +321,11 @@ a {
   display: block;
   width: 14px;
   height: 14px;
-  background: url(https://shop.gionee.com/static/images/global/newpartlst.png) no-repeat 0 -148px;
+  background: url(https://shop.gionee.com/static/images/global/newpartlst.png) no-repeat 0 -134px;
   position: absolute;
   top: 7px;
   left: 0;
   overflow: hidden;
-  background-position: 0 -134px;
   z-index: 999; }
 
 .checkbox li a:hover {
@@ -385,7 +385,7 @@ a {
 .list_pro a.img img {
   width: 300px;
   height: 300px;
-  margin-left: -35px;
+  margin-left: -5px;
   margin-bottom: 10px; }
 
 .list_pro .goods_title {
