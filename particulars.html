@@ -118,6 +118,7 @@
                                     <li class=""><img src="https://imggn.gionee.com/images/201610/thumb_img/1179_thumb_P_1477548344975.jpg" width="50" height="50"></li>
                                 </ul>
                             </div>
+                            
                         </div>
                         <div class="medias">
                             <a href="#" class="fl only_photos" id="showOriginalImg1">
@@ -126,9 +127,11 @@
                             </a>
                         </div>
                     </div>
+                    
                     <div class="showimg sh2">
                         <div class="imgbig imgbig1">
                             <img src="https://imggn.gionee.com/images/201610/goods_img/1179_P_1477548344805.jpg" width="350" height="350">
+                            <div id="mark"></div>
                         </div>
                         <div class="imgsmall">
                             <div class="panel" style="position: relative; overflow: hidden; height: 120px; top: 0px;">
@@ -196,15 +199,15 @@
             </div>
             <div class="pcs_album">
                 <img id="albumBigImg" width="500" height="500" src="https://imggn.gionee.com/images/201610/source_img/1179_P_1477548344379.jpg">
-                <span class="spirit0722 big_to_left" id="btnBigImgLeft" style="display: block;"></span>
-                <span class="spirit0722 big_to_right" id="btnBigImgRight" style="display: block;"></span>
+                <span class="spirit0722 big_to_left" id="btnBigImgLeft"></span>
+                <span class="spirit0722 big_to_right" id="btnBigImgRight"></span>
             </div>
             <div class="pcs_album_list" id="albumListBar">
                 <span class="pcs_prev prev_none" id="albumLeft"></span>
                 <span class="pcs_next next_none" id="albumRight"></span>
                 <div class="products_pcslist" id="albumListCon">
                     <div class="products_pcslist_con" id="albumList">
-                        <a class="products_pcsitem products_pcsitem_cur" href="#">
+                        <a class="cur products_pcsitem " href="#">
                             <img width="86" height="86" src="https://imggn.gionee.com/images/201610/thumb_img/1179_thumb_P_1477548345470.jpg" >
                         </a>
                         <a class="products_pcsitem" href="#">
@@ -222,6 +225,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="big">
+            <img src="https://imggn.gionee.com/images/201610/goods_img/1179_P_1477548344805.jpg" alt="">
         </div>
         <div id="fade" class="black_overlay"></div>
         <div id="tabtab">
@@ -347,5 +353,5 @@
             </div>
         </div>
     </body>
-    <script src = 'js/particulars.js'></script>
+    <script src = 'js/require.js' async = 'true' defer data-main = "js/particularsmain"></script>
 </html>

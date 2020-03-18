@@ -450,7 +450,8 @@ a {
   padding: 0 0 15px;
   height: 350px;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .imgbig img {
   vertical-align: top; }
@@ -893,10 +894,12 @@ tr {
   cursor: pointer; }
 
 .prev_none {
-  background-position: -209px -118px; }
+  background-position: -209px -118px;
+  left: 0; }
 
 .next_none {
-  background-position: -263px -118px; }
+  background-position: -263px -118px;
+  right: 0; }
 
 .products_pcslist {
   position: absolute;
@@ -913,6 +916,45 @@ tr {
   float: left;
   border: #CCC 2px solid;
   margin-right: 10px; }
+
+.products_pcsitem:hover {
+  border-color: #f60; }
+
+.cur {
+  border: #f60 2px solid;
+  float: left;
+  margin-right: 10px;
+  z-index: 999; }
+
+body {
+  position: relative; }
+
+#big {
+  overflow: hidden;
+  display: none;
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: absolute;
+  left: 750px;
+  top: 200px; }
+
+#big img {
+  width: 700px;
+  height: 700px;
+  position: absolute; }
+
+#mark {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 99; }
 
 #bottomserve {
   padding-top: 40px; }
