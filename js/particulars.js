@@ -158,6 +158,9 @@ define(["jquery"], function($){
             }else{
                 btnBigImgRight.style.display = "none"
             }
+            if(b > 0){
+                btnBigImgLeft.style.display = "block"
+            }
             albumAs[b].className = 'cur';
             albumBigImg.src = albumimg[b].src;
         }
@@ -182,19 +185,19 @@ define(["jquery"], function($){
         oSma1.onmousemove = function(ev){
             var e = ev || window.event;
             
-            var l = e.clientX - oSma1.offsetLeft - showimg.offsetLeft - Wrapperbox.offsetLeft - 140;
+            var l = e.clientX - oSma1.offsetLeft - showimg.offsetLeft - Wrapperbox.offsetLeft -S1.offsetLeft - 110;
             if(l <= 0){
                 l = 0;
             }
-            if(l >= 180){
-                l = 180;
+            if(l >= 150){
+                l = 150;
             }
-            var t = e.clientY - oSma1.offsetTop - showimg.offsetTop - Wrapperbox.offsetTop  - S1.offsetTop - 50;
+            var t = e.clientY - oSma1.offsetTop - showimg.offsetTop - Wrapperbox.offsetTop  - S1.offsetTop - 40;
             if(t <= 0){
                 t = 0;
             }
-            if(t >= 190){
-                t = 190;
+            if(t >= 170){
+                t = 170;
             }
             console.log(e.clientX,e.clientY,oSma1.offsetTop,t);
             oMark.style.left = l + 'px';

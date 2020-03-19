@@ -271,6 +271,82 @@ a {
   margin-top: -61px;
   border: 0; }
 
+.box {
+  background-color: #f5f5f5; }
+
+#buybox {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff; }
+
+.buyname {
+  float: left;
+  border-bottom: 2px solid #f5f5f5;
+  padding-left: 50px;
+  line-height: 20px; }
+
+.buyname > span {
+  margin: 0 90px; }
+
+.proche > span {
+  margin: 0 70px; }
+
+.proche {
+  float: left;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  padding-left: 50px;
+  position: relative; }
+
+#close {
+  position: absolute;
+  right: 185px;
+  top: 35px; }
+
+.proche img {
+  position: absolute;
+  left: 60px;
+  top: 10px; }
+
+.proche input {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  z-index: 9999; }
+
+.proche span:nth-of-type(2) {
+  position: absolute;
+  left: 110px;
+  top: 10px; }
+
+.proche span:nth-of-type(3) {
+  position: absolute;
+  left: 342px;
+  top: 10px; }
+
+.add {
+  position: absolute;
+  top: 20px;
+  right: 580px; }
+
+.proche span:nth-of-type(4) {
+  position: absolute;
+  top: 10px;
+  right: 325px; }
+
+.account {
+  border-top: 5px solid #f5f5f5;
+  border-bottom: 5px solid #f5f5f5;
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  font-size: 30px; }
+
 #pro {
   overflow: hidden;
   position: relative;
